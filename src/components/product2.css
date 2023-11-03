@@ -1,0 +1,143 @@
+/* product.css */
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Center the product card */
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+}
+
+.product-card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center vertically */
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  background-color: #f0f0f0;
+}
+
+.product-image {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 10px; /* Add margin at the bottom */
+}
+
+.product-details {
+  text-align: center; /* Center text horizontally */
+}
+
+.product-details h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px; /* Add padding to the product name */
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Add margin at the top */
+  justify-content: center;
+}
+
+.quantity-control button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.quantity-control button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for h1, input, and select */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0; /* Add margin at the top and bottom */
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: #00b500 1px solid;
+  margin: 10px;
+
+}
+
+select {
+  cursor: pointer; /* Change cursor to pointer on select elements */
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  background-color: aquamarine;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 10px;
+  border-radius: 5px;
+  color: white;
+  
+}
+
+.card:first-child{
+  background-color: #00c3ff;
+}
+.card:nth-child(2){
+  background-color: #ff0800;
+}
+
+.card:nth-child(3){
+  background-color: #00b500;
+}
+
+.card:nth-child(4){
+  background-color: #0088ff;
+}
+
+
+/* $theme-colors: (
+  "primary":    #0275d8,
+  "secondary":  #0275d8,
+  "success":    #5cb85c,
+  "info":       #5bc0de,
+  "warning":    #f0ad4e,
+  "danger":     #d9534f,
+); */
